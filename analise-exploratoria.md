@@ -17,30 +17,37 @@ As estatísticas descritivas para as variáveis contínuas estão resumidas na t
 | **maxwHBa**  | 1.920     | 0.523             | 0.000      | 1.840          | 2.020       | 2.162          | 3.779      |
 | **FMF**      | 0.376     | 0.072             | 0.154      | 0.327          | 0.376       | 0.423          | 0.537      |
 
-## 3. Distribuição das Variáveis
+## 3. Matriz de Correlação
 
-- **SC-5**: A variável apresenta uma distribuição com média em torno de 0.42 e um desvio padrão de 0.195. A maioria dos valores se concentra entre 0.282 e 0.533.
-- **SP-6**: Com média de 4.43 e desvio padrão de 1.403, a distribuição é mais dispersa, variando de 2.09 a 7.64.
-- **SHBd**: Notável por ter muitos valores em zero, sugerindo que essa variável pode não estar uniformemente distribuída entre as instâncias.
-- **minHaaCH**: Com valores variando de 0 a 0.721, a maioria dos valores está entre 0.43 e 0.506.
-- **maxwHBa**: A distribuição é mais ampla, com um desvio padrão de 0.523.
-- **FMF**: É a variável com a menor dispersão, indicando uma distribuição mais concentrada em torno da média de 0.376.
+### Tabela
+|            | SC-5   | SP-6   | SHBd   | minHaaCH | maxwHBa | FMF    |
+|------------|--------|--------|--------|----------|---------|--------|
+| **SC-5**   | 1.000  | 0.662  | -0.102 | 0.110    | -0.084  | 0.182  |
+| **SP-6**   | 0.662  | 1.000  | -0.113 | 0.196    | 0.090   | 0.580  |
+| **SHBd**   | -0.102 | -0.113 | 1.000  | 0.233    | 0.049   | 0.053  |
+| **minHaaCH**| 0.110 | 0.196  | 0.233  | 1.000    | 0.461   | 0.258  |
+| **maxwHBa**| -0.084 | 0.090  | 0.049  | 0.461    | 1.000   | 0.190  |
+| **FMF**    | 0.182  | 0.580  | 0.053  | 0.258    | 0.190   | 1.000  |
 
-## 4. Balanceamento de Classes
+### Imagem
+![Matriz de Correlação](https://github.com/user-attachments/assets/ffced4f6-3e16-414f-b309-99c85a016ecb)
 
-O dataset classifica as moléculas em duas categorias: `High_BFE` e `Low_BFE`. É importante verificar o equilíbrio entre essas classes para garantir que os modelos de classificação não fiquem enviesados.
+## 4. Histograma de cada variável
 
-## 5. Correlação Entre Variáveis
+### SC-5
+![image](https://github.com/user-attachments/assets/cd787567-3ac1-4c6f-86ef-57c94591a8a5)
 
-Seria útil calcular a matriz de correlação entre as variáveis contínuas para entender como elas se relacionam entre si. Isso ajuda a identificar possíveis multicolinearidades.
+### SP-6
+![image](https://github.com/user-attachments/assets/6214942a-7b36-4ba1-a663-9b95ed3adaf4)
 
-## 6. Visualizações Sugeridas
+### SHBd
+![image](https://github.com/user-attachments/assets/566b0f0e-9430-4ca4-85ff-ce6b429d4d3b)
 
-- **Histograma**: Para cada variável contínua, plotar histogramas para entender melhor suas distribuições.
-- **Boxplot**: Para identificar possíveis outliers e comparar a distribuição das variáveis entre as duas classes.
-- **Pairplot**: Para visualizar as relações entre pares de variáveis e como elas diferem entre as classes.
-- **Heatmap de Correlação**: Para visualizar a correlação entre as variáveis.
+### minHaaCH
+![image](https://github.com/user-attachments/assets/5b7a6fb1-2548-40a8-982c-b6dc8dc4b769)
 
-## 7. Considerações Finais
+### maxwHBa
+![image](https://github.com/user-attachments/assets/4ad33be1-9ace-45fc-bf29-50dd89739203)
 
-Os dados parecem ser bem comportados, sem valores ausentes e com uma variação significativa entre as variáveis. A análise mais detalhada, especialmente com visualizações, pode fornecer mais insights sobre como essas variáveis se comportam em relação à classificação das moléculas.
+### FMF
+![image](https://github.com/user-attachments/assets/f43e90f5-c75a-4bff-8c3f-4fd6f08a5bae)
